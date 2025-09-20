@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Reqonic</title>
+    <meta
+      name="description"
+      content="Learn about Reqonic's mission, vision, and team. We're dedicated to delivering innovative technology solutions for businesses worldwide."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white/50 fixed-top"
+      style="backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/ReqonicLogoBlack-TransparentBG.svg"
+            alt="Reqonic Logo"
+            height="40"
+            class="logo-light"
+          />
+          <img
+            src="images/ReqonicLogoWhite-TransparentBG.svg"
+            alt="Reqonic Logo"
+            height="40"
+            class="logo-dark d-none"
+          />
+        </a>
+
+        <!-- Mobile menu button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Language Toggle & Theme Toggle -->
+          <div class="d-flex align-items-center gap-3">
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              id="languageToggle"
+            >
+              <i class="bi bi-globe me-1"></i>
+              <span id="languageText">العربية</span>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm" id="themeToggle">
+              <i class="bi bi-moon" id="themeIcon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      style="
+        background-image: url('images/project-banking.png');
+        padding-top: 80px;
+      "
+    >
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <div class="hero-content text-white">
+              <h1
+                class="display-3 fw-bold mb-4"
+                data-translate="about-hero-title"
+              >
+                Pioneering the Future of Technology Solutions
+              </h1>
+              <p class="lead" data-translate="about-hero-subtitle">
+                Since our founding, we've been dedicated to transforming
+                businesses through innovative technology solutions, serving
+                clients across the globe with excellence and integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-eye text-primary me-3 fs-4"></i>
+                <h2 class="h3 mb-0" data-translate="about-vision-title">
+                  Our Vision
+                </h2>
+              </div>
+              <p class="text-muted" data-translate="about-vision-desc">
+                To be the leading global provider of innovative technology
+                solutions that empower businesses to thrive in the digital age.
+                We envision a world where technology seamlessly integrates with
+                business operations to create unprecedented value and growth
+                opportunities.
+              </p>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-bullseye text-primary me-3 fs-4"></i>
+                <h2 class="h3 mb-0" data-translate="about-mission-title">
+                  Our Mission
+                </h2>
+              </div>
+              <p class="text-muted" data-translate="about-mission-desc">
+                To deliver exceptional technology solutions that drive business
+                success through innovation, expertise, and unwavering commitment
+                to client satisfaction. We strive to build long-term
+                partnerships that transform challenges into opportunities.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              src="images/modern-tech-office.png"
+              alt="Reqonic team working"
+              class="img-fluid rounded-3 shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h2 mb-3" data-translate="about-values-title">
+            Our Core Values
+          </h2>
+          <p class="text-muted" data-translate="about-values-subtitle">
+            The principles that guide everything we do and shape our company
+            culture.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="bi bi-bullseye text-primary fs-4"></i>
+                </div>
+                <h5
+                  class="card-title"
+                  data-translate="about-value-innovation-title"
+                >
+                  Innovation
+                </h5>
+                <p
+                  class="card-text text-muted"
+                  data-translate="about-value-innovation-desc"
+                >
+                  We constantly push the boundaries of technology to deliver
+                  cutting-edge solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="bi bi-heart text-primary fs-4"></i>
+                </div>
+                <h5
+                  class="card-title"
+                  data-translate="about-value-excellence-title"
+                >
+                  Excellence
+                </h5>
+                <p
+                  class="card-text text-muted"
+                  data-translate="about-value-excellence-desc"
+                >
+                  We are committed to delivering the highest quality in
+                  everything we do.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="bi bi-people text-primary fs-4"></i>
+                </div>
+                <h5
+                  class="card-title"
+                  data-translate="about-value-collaboration-title"
+                >
+                  Collaboration
+                </h5>
+                <p
+                  class="card-text text-muted"
+                  data-translate="about-value-collaboration-desc"
+                >
+                  We believe in working closely with our clients to achieve
+                  shared success.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="bi bi-globe text-primary fs-4"></i>
+                </div>
+                <h5
+                  class="card-title"
+                  data-translate="about-value-global-title"
+                >
+                  Global Impact
+                </h5>
+                <p
+                  class="card-text text-muted"
+                  data-translate="about-value-global-desc"
+                >
+                  Our solutions are designed to make a positive impact on
+                  businesses worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="h2 text-primary fw-bold">500+</div>
+            <div class="text-muted" data-translate="about-stat-clients">
+              Clients Served
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="h2 text-primary fw-bold">1000+</div>
+            <div class="text-muted" data-translate="about-stat-projects">
+              Projects Completed
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="h2 text-primary fw-bold">50+</div>
+            <div class="text-muted" data-translate="about-stat-countries">
+              Countries Reached
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="h2 text-primary fw-bold">99.9%</div>
+            <div class="text-muted" data-translate="about-stat-uptime">
+              Uptime Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-5"
+      style="background: linear-gradient(135deg, #1c2443 0%, #3b82f6 100%)"
+    >
+      <div class="container text-center text-white">
+        <h2 class="h2 mb-3" data-translate="about-cta-title">
+          Ready to Work with Us?
+        </h2>
+        <p class="lead mb-4" data-translate="about-cta-subtitle">
+          Join hundreds of satisfied clients who trust Reqonic for their
+          technology needs.
+        </p>
+        <a
+          href="contact.html"
+          class="btn btn-light btn-lg px-4"
+          data-translate="about-cta-button"
+        >
+          Contact Our Team
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light border-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-lg-4 mb-4">
+            <a href="index.html" class="d-flex align-items-center mb-3">
+              <img
+                src="images/ReqonicLogoBlack-TransparentBG.svg"
+                alt="Reqonic Logo"
+                height="50"
+              />
+            </a>
+            <p class="text-muted" data-translate="footer-description">
+              Professional technology and IT solutions for individuals and
+              businesses worldwide.
+            </p>
+            <!-- Social Icons -->
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="mailto:info@reqonic.com"
+                class="btn btn-outline-primary btn-sm rounded-circle"
+              >
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-company">Company</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="about.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-about"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="services.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-services"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-contact"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-services-title">
+                  Services
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-web"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-app"
+                      >App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-cloud"
+                      >Cloud Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-support">Support</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-help"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-faq"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-support-contact"
+                      >Contact Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-contact-title">
+                  Contact
+                </h6>
+                <ul class="list-unstyled text-muted">
+                  <li data-translate="footer-email">info@reqonic.com</li>
+                  <li data-translate="footer-phone">0523299663</li>
+                  <li data-translate="footer-address">Dubai, UAE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-muted mb-0">
+              &copy; 2025 Reqonic.
+              <span data-translate="footer-rights">All rights reserved.</span>
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a
+              href="#"
+              class="text-muted text-decoration-none me-3"
+              data-translate="footer-terms"
+              >Terms & Conditions</a
+            >
+            <span class="text-muted">•</span>
+            <a
+              href="#"
+              class="text-muted text-decoration-none ms-3"
+              data-translate="footer-privacy"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translations -->
+    <script src="translations.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

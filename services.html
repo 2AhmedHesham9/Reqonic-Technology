@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Reqonic</title>
+    <meta
+      name="description"
+      content="Comprehensive IT solutions for individuals and businesses. From personal tech support to enterprise infrastructure, we deliver cutting-edge solutions."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white/50 fixed-top"
+      style="backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/ReqonicLogoBlack-TransparentBG.svg"
+            alt="Reqonic Logo"
+            height="40"
+            class="logo-light"
+          />
+          <img
+            src="images/ReqonicLogoWhite-TransparentBG.svg"
+            alt="Reqonic Logo"
+            height="40"
+            class="logo-dark d-none"
+          />
+        </a>
+
+        <!-- Mobile menu button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Language Toggle & Theme Toggle -->
+          <div class="d-flex align-items-center gap-3">
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              id="languageToggle"
+            >
+              <i class="bi bi-globe me-1"></i>
+              <span id="languageText">العربية</span>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm" id="themeToggle">
+              <i class="bi bi-moon" id="themeIcon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      style="
+        background-image: url('images/pexels-pavel-danilyuk-5496461.jpg');
+        padding-top: 80px;
+      "
+    >
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-10">
+            <div class="hero-content text-white">
+              <h1
+                class="display-4 fw-bold mb-4"
+                data-translate="services-hero-title"
+              >
+                Our Services
+              </h1>
+              <p class="lead mb-4" data-translate="services-hero-subtitle">
+                Comprehensive IT solutions for individuals and businesses
+              </p>
+              <p class="mb-5" data-translate="services-hero-description">
+                From personal tech support to enterprise infrastructure, we
+                deliver cutting-edge solutions tailored to your unique needs.
+                Experience the power of technology with Reqonic's expert
+                services.
+              </p>
+
+              <!-- Service Type Tabs -->
+              <div class="d-flex justify-content-center mb-5">
+                <div class="btn-group" role="group">
+                  <button
+                    type="button"
+                    class="btn btn-light active"
+                    id="individualTab"
+                    data-service="individual"
+                  >
+                    <i class="bi bi-people me-2"></i>
+                    <span data-translate="services-individual-tab"
+                      >Individual Clients</span
+                    >
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-light"
+                    id="corporateTab"
+                    data-service="corporate"
+                  >
+                    <i class="bi bi-building me-2"></i>
+                    <span data-translate="services-corporate-tab"
+                      >Corporate Clients</span
+                    >
+                  </button>
+                </div>
+              </div>
+
+              <!-- Stats -->
+              <div class="row text-center">
+                <div class="col-6 col-md-3 mb-3">
+                  <div class="h3 text-primary fw-bold">50+</div>
+                  <div class="small" data-translate="services-stat-projects">
+                    Projects Completed
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                  <div class="h3 text-primary fw-bold">24/7</div>
+                  <div class="small" data-translate="services-stat-support">
+                    Support Available
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                  <div class="h3 text-primary fw-bold">99.9%</div>
+                  <div class="small" data-translate="services-stat-uptime">
+                    Uptime Guarantee
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                  <div class="h3 text-primary fw-bold">5+</div>
+                  <div class="small" data-translate="services-stat-experience">
+                    Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2
+            class="h2 mb-3"
+            id="servicesTitle"
+            data-translate="services-individual-title"
+          >
+            Personal IT Solutions
+          </h2>
+          <p
+            class="text-muted"
+            id="servicesSubtitle"
+            data-translate="services-individual-subtitle"
+          >
+            Tailored technology services for your personal and professional
+            needs
+          </p>
+        </div>
+
+        <!-- Services Carousel -->
+        <div class="swiper servicesSwiper mb-5">
+          <div class="swiper-wrapper">
+            <!-- Individual Services -->
+            <div class="swiper-slide" data-service="individual">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg"
+                      class="img-fluid h-100 object-cover"
+                      alt="Gaming Publisher"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-gaming-title"
+                      >
+                        Gaming Publisher
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-gaming-desc"
+                      >
+                        Professional game publishing and distribution services
+                        for indie developers. We provide end-to-end support
+                        including marketing, localization, and platform
+                        optimization.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-gaming-feature1"
+                            >Steam Integration</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-gaming-feature2"
+                            >Marketing Support</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-gaming-feature3"
+                            >Revenue Optimization</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-gaming-feature4"
+                            >Community Management</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="individual">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/pexels-thisisengineering-3912477.jpg"
+                      class="img-fluid h-100 object-cover"
+                      alt="Personal Cloud Storage"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-cloud-title"
+                      >
+                        Personal Cloud Storage
+                      </h5>
+                      <p class="card-text" data-translate="services-cloud-desc">
+                        Experience secure and scalable cloud storage designed to
+                        keep your personal files and sensitive data safe,
+                        accessible anytime, and backed by reliable
+                        infrastructure.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-cloud-feature1"
+                            >End-to-End Encryption</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-cloud-feature2"
+                            >Auto Sync</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-cloud-feature3"
+                            >File Sharing</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-cloud-feature4"
+                            >Mobile Access</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="individual">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/project-healthcare.png"
+                      class="img-fluid h-100 object-cover"
+                      alt="Online Database Tools"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-database-title"
+                      >
+                        Online Database Tools
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-database-desc"
+                      >
+                        Easy-to-use and intuitive database management tools
+                        designed specifically for personal use and small
+                        businesses, helping you organize, store, and access your
+                        data efficiently.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-database-feature1"
+                            >Visual Query Builder</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-database-feature2"
+                            >Data Import/Export</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-database-feature3"
+                            >Backup & Recovery</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-database-feature4"
+                            >API Access</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="individual">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/pexels-olly-840996.jpg"
+                      class="img-fluid h-100 object-cover"
+                      alt="Personal IT Support"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-support-title"
+                      >
+                        Personal IT Support
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-support-desc"
+                      >
+                        24/7 reliable technical support for all your personal
+                        devices and software, ensuring you get instant
+                        assistance, troubleshooting, and expert guidance
+                        whenever you need it.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-support-feature1"
+                            >Remote Assistance</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-support-feature2"
+                            >Device Setup</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-support-feature3"
+                            >Software Installation</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-support-feature4"
+                            >Troubleshooting</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Corporate Services -->
+            <div class="swiper-slide" data-service="corporate">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/taylor-vick-M5tzZtFCOfs-unsplash.jpg"
+                      class="img-fluid h-100 object-cover"
+                      alt="Database Systems Design"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-corp-database-title"
+                      >
+                        Database Systems Design
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-corp-database-desc"
+                      >
+                        Custom database architecture and optimization for
+                        enterprise applications
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span
+                            data-translate="services-corp-database-feature1"
+                            >Performance Optimization</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span
+                            data-translate="services-corp-database-feature2"
+                            >Scalability Planning</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span
+                            data-translate="services-corp-database-feature3"
+                            >Security Implementation</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span
+                            data-translate="services-corp-database-feature4"
+                            >Migration Services</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="corporate">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/project-smart-city.png"
+                      class="img-fluid h-100 object-cover"
+                      alt="IT Infrastructure"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-corp-infra-title"
+                      >
+                        IT Infrastructure
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-corp-infra-desc"
+                      >
+                        Complete IT infrastructure setup and management for
+                        modern businesses
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-infra-feature1"
+                            >Network Design</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-infra-feature2"
+                            >Server Management</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-infra-feature3"
+                            >Security Systems</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-infra-feature4"
+                            >Monitoring & Maintenance</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="corporate">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/project-banking.png"
+                      class="img-fluid h-100 object-cover"
+                      alt="Cloud Services & Datacenter"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-corp-cloud-title"
+                      >
+                        Cloud Services & Datacenter
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-corp-cloud-desc"
+                      >
+                        Enterprise cloud solutions and datacenter management
+                        services
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-cloud-feature1"
+                            >Cloud Migration</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-cloud-feature2"
+                            >Hybrid Solutions</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-cloud-feature3"
+                            >Disaster Recovery</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-cloud-feature4"
+                            >Cost Optimization</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-service="corporate">
+              <div class="card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <img
+                      src="images/umberto-jXd2FSvcRr8-unsplash.jpg"
+                      class="img-fluid h-100 object-cover"
+                      alt="Electronic Chips Programming"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card-body d-flex flex-column justify-content-center h-100"
+                    >
+                      <h5
+                        class="card-title"
+                        data-translate="services-corp-chips-title"
+                      >
+                        Electronic Chips Programming
+                      </h5>
+                      <p
+                        class="card-text"
+                        data-translate="services-corp-chips-desc"
+                      >
+                        Custom firmware development and embedded systems
+                        programming
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-chips-feature1"
+                            >Firmware Development</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-chips-feature2"
+                            >IoT Solutions</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-chips-feature3"
+                            >Hardware Integration</span
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check-circle text-primary me-2"></i
+                          ><span data-translate="services-corp-chips-feature4"
+                            >Testing & Validation</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="text-center">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h2 mb-3" data-translate="services-benefits-title">
+            Why Choose Our Services?
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width: 60px; height: 60px"
+              >
+                <i class="bi bi-people text-primary fs-4"></i>
+              </div>
+              <h5
+                class="fw-bold"
+                data-translate="services-benefit-expert-title"
+              >
+                Expert Team
+              </h5>
+              <p
+                class="text-muted"
+                data-translate="services-benefit-expert-desc"
+              >
+                Certified professionals with years of industry experience
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width: 60px; height: 60px"
+              >
+                <i class="bi bi-shield-check text-primary fs-4"></i>
+              </div>
+              <h5
+                class="fw-bold"
+                data-translate="services-benefit-security-title"
+              >
+                Security First
+              </h5>
+              <p
+                class="text-muted"
+                data-translate="services-benefit-security-desc"
+              >
+                Enterprise-grade security measures to protect your data
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width: 60px; height: 60px"
+              >
+                <i class="bi bi-lightning text-primary fs-4"></i>
+              </div>
+              <h5 class="fw-bold" data-translate="services-benefit-fast-title">
+                Fast Implementation
+              </h5>
+              <p class="text-muted" data-translate="services-benefit-fast-desc">
+                Quick deployment and setup to get you running fast
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div
+                class="mx-auto mb-3 p-3 bg-primary/10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width: 60px; height: 60px"
+              >
+                <i class="bi bi-award text-primary fs-4"></i>
+              </div>
+              <h5
+                class="fw-bold"
+                data-translate="services-benefit-quality-title"
+              >
+                Quality Assurance
+              </h5>
+              <p
+                class="text-muted"
+                data-translate="services-benefit-quality-desc"
+              >
+                Rigorous testing and quality control processes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light border-top py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-lg-4 mb-4">
+            <a href="index.html" class="d-flex align-items-center mb-3">
+              <img
+                src="images/ReqonicLogoBlack-TransparentBG.svg"
+                alt="Reqonic Logo"
+                height="50"
+              />
+            </a>
+            <p class="text-muted" data-translate="footer-description">
+              Professional technology and IT solutions for individuals and
+              businesses worldwide.
+            </p>
+            <!-- Social Icons -->
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm rounded-circle">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="mailto:info@reqonic.com"
+                class="btn btn-outline-primary btn-sm rounded-circle"
+              >
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-company">Company</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="about.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-about"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="services.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-services"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-contact"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-services-title">
+                  Services
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-web"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-app"
+                      >App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-cloud"
+                      >Cloud Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-support">Support</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-help"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-faq"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-muted text-decoration-none"
+                      data-translate="footer-support-contact"
+                      >Contact Support</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-3">
+                <h6 class="fw-bold" data-translate="footer-contact-title">
+                  Contact
+                </h6>
+                <ul class="list-unstyled text-muted">
+                  <li data-translate="footer-email">info@reqonic.com</li>
+                  <li data-translate="footer-phone">0523299663</li>
+                  <li data-translate="footer-address">Dubai, UAE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-muted mb-0">
+              &copy; 2025 Reqonic.
+              <span data-translate="footer-rights">All rights reserved.</span>
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a
+              href="#"
+              class="text-muted text-decoration-none me-3"
+              data-translate="footer-terms"
+              >Terms & Conditions</a
+            >
+            <span class="text-muted">•</span>
+            <a
+              href="#"
+              class="text-muted text-decoration-none ms-3"
+              data-translate="footer-privacy"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Translations -->
+    <script src="translations.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+  </body>
+</html>
